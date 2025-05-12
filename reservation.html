@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezervasyon - Seyahat Acentesi</title>
+    <link rel="stylesheet" href="styles/style.css"> <!-- CSS dosyasını bağlıyoruz -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive yapı için -->
+</head>
+<body>
+
+<header>
+    <h1>Seyahat Acentesi</h1> <!-- Başlık -->
+</header>
+
+<nav>
+    <!-- Navbar: Tüm sayfalara erişim sağlanacak -->
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+        <li><a href="reservation.html">Rezervasyon</a></li>
+        <li><a href="feedback.html">Geri Bildirim</a></li>
+        <li><a href="otelbilgi.html">Otel Bilgi</a></li>
+        <li><a href="survey.html">Anket</a></li>
+        <li><a href="job.html">İş Başvurusu</a></li>
+        <li><a href="support.html">Destek</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Rezervasyon Formu</h2> <!-- Sayfa başlığı -->
+
+    <p>Seyahatinizi planlamak için aşağıdaki formu doldurabilirsiniz:</p>
+
+    <form id="reservationForm">
+    <input type="text" id="resName" placeholder="Ad Soyad" required>
+    <input type="email" id="resEmail" placeholder="Email" required>
+    <input type="date" id="resDate" required>
+    <input type="number" id="resPeople" placeholder="Kişi Sayısı" required>
+    <input type="text" id="resHotel" placeholder="Otel Adı" required>
+    <button type="submit">Rezervasyon Yap</button>
+</form>
+<script src="scripts/myscript.js"></script>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Seyahat Acentesi | Tüm Hakları Saklıdır.</p> <!-- Footer -->
+</footer>
+
+<script src="scripts/myscript.js"></script> <!-- JS dosyasını bağlıyoruz -->
+
+</body>
+</html>

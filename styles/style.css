@@ -1,0 +1,79 @@
+/* Genel stil sıfırlama (Tarayıcı varsayılanlarını sıfırlarız) */
+* {
+    margin: 0; /* Tüm elementlerin dış boşluklarını sıfırla */
+    padding: 0; /* Tüm elementlerin iç boşluklarını sıfırla */
+    box-sizing: border-box; /* Kenarlık ve padding'i toplam genişliğe dahil et */
+}
+
+/* Body genel stil */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipini belirle */
+    line-height: 1.6; /* Satır yüksekliğini arttır (okunabilirlik için) */
+    background-color: #f4f4f4; /* Sayfa arka plan rengini açık gri yap */
+    color: #333; /* Yazı rengini koyu gri yap */
+    padding: 0 20px; /* Sağ ve sol kenardan sayfa boşluğu ver */
+}
+
+/* Header stil */
+header {
+    background-color: #0077b6; /* Mavi arka plan */
+    color: white; /* Beyaz yazı */
+    padding: 20px 0; /* Üst-alt boşluk ver */
+    text-align: center; /* Yazıyı ortala */
+}
+
+/* Navbar stil */
+nav ul {
+    background-color: #023e8a; /* Daha koyu mavi navbar arka plan */
+    list-style: none; /* Liste işaretlerini kaldır */
+    display: flex; /* Menü elemanlarını yan yana diz */
+    flex-wrap: wrap; /* Küçük ekranlarda alt satıra geçsin */
+    justify-content: center; /* Ortala */
+}
+
+nav ul li {
+    margin: 5px; /* Menü elemanları arasına boşluk koy */
+}
+
+nav ul li a {
+    display: block; /* Tıklanabilir alanı genişlet */
+    color: white; /* Yazı beyaz */
+    padding: 10px 20px; /* İç boşluk ver */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    transition: background-color 0.3s; /* Hover geçiş efekti */
+}
+
+nav ul li a:hover {
+    background-color: #00b4d8; /* Üzerine gelince açık mavi olsun */
+}
+
+/* Main (Ana içerik) stil */
+main {
+    background-color: white; /* Beyaz arka plan */
+    padding: 20px; /* İç boşluk */
+    margin-top: 20px; /* Üstten boşluk */
+    border-radius: 8px; /* Kenarları yuvarlat */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+}
+
+/* Footer stil */
+footer {
+    background-color: #0077b6; /* Aynı mavi tonu */
+    color: white; /* Beyaz yazı */
+    text-align: center; /* Ortala */
+    padding: 10px; /* İç boşluk */
+    margin-top: 20px; /* Üstten boşluk */
+    border-radius: 8px; /* Kenarları yuvarlat */
+}
+
+/* Responsive tasarım: Ekran 600px'den küçükse navbar dikey dizilir */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Menü elemanlarını alt alta diz */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Küçük ekranda padding azalt */
+    }
+}

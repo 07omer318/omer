@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Sayfa - Seyahat Acentesi</title>
+    <link rel="stylesheet" href="styles/style.css">  <!-- Stil dosyamızı bağlayalım (style.css) -->
+    <title>Galeri</title>
+
+    <!-- Stil dosyamızı bağlayalım (style.css) -->
+    
+
+    <style>
+        /* Sayfa içi CSS: Sadece galeriye özel stiller */
+        .gallery {
+            display: grid; /* Resimleri grid ile diz */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ekrana uyumlu otomatik kolon */
+            gap: 10px; /* Resimler arası boşluk */
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%; /* Görsel kutuyu tamamen kaplasın */
+            height: auto;
+            border-radius: 8px; /* Köşeleri yumuşat */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+            transition: transform 0.3s; /* Hoverda animasyon */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Hoverda hafif büyütme efekti */
+        }
+    </style>
+
+</head>
+<body>
+
+<nav>
+    <!-- Navbar: Tüm sayfalara buradan erişim sağlanacak -->
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+        <li><a href="reservation.html">Rezervasyon</a></li>
+        <li><a href="feedback.html">Geri Bildirim</a></li>
+        <li><a href="otelbilgi.html">Otel Bilgi</a></li>
+        <li><a href="survey.html">Anket</a></li>
+        <li><a href="job.html">İş Başvurusu</a></li>
+        <li><a href="support.html">Destek</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="message.html">mesaj</a></li>
+        
+    </ul>
+</nav>
+<hr>
+
+<h1>Galeri</h1>
+
+<p>Web sitemize ait bazı görselleri aşağıda görebilirsiniz.</p>
+
+<div class="gallery">
+    <!-- Görseller (img klasöründe bulunmalı) -->
+    <img src="otel1.jpg" alt="Resim 1">
+    <img src="otel2.jpg" alt="Resim 2">
+    <img src="otel3.jpg" alt="Resim 3">
+    <img src="otel4.jpg" alt="Resim 4">
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 - Web Sitemiz</p>
+</footer>
+
+</body>
+</html>
+
